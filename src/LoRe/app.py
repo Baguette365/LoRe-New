@@ -39,7 +39,7 @@ class LoRe(toga.App):
 
         for component in self.components:
             self.MainBox.add(self.components[component])
-    def say_hello(self):
+    def say_hello(self, **kwargs):
         pass
 
 #main function

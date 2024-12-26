@@ -3,7 +3,7 @@
 project_name = "LoRe"
 bundle = "LoRe.charles.free"
 version = "0.0.1"
-url = "https://free.charles.LoRe/LoRe"
+url = "https://github.com/Baguette365/LoRe-New"
 license.file = "LICENSE"
 author = "Charles GODEFROY"
 author_email = "charlesgodefroy00@gmail.com"
