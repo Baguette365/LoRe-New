@@ -30,21 +30,34 @@ class LoRe(toga.App):
         self.main_window.show()
 
     def LanguageScreen(self):
+        #clear the screen
+        self.MainBox.children.clear()
+
         #store all components
-        self.components={
+        self.LanguageComponents={
             "SelectLanguageButton": toga.Label(text="select a language", style=Pack(padding=(0,5),text_align=CENTER,font_size=36,color="white", background_color="black")),
             "FrenchButton": toga.Button("francais | french",on_press=self.say_hello,style=Pack(padding=5,flex=1, width=round(self.width), height=round(self.height/3))),
             "EnglishButton": toga.Button("english | anglais", on_press=self.say_hello, style=Pack(padding=20 , flex=1, width=round(self.width), height=round(self.height/3)))
         }
 
-        for component in self.components:
-            self.MainBox.add(self.components[component])
+        for component in self.LanguageComponents:
+            self.MainBox.add(self.LanguageComponents[component])
     def say_hello(self, **kwargs):
         pass
 
 #main function
 def main():
     return LoRe()
+
+
+
+
+
+
+
+
+
+
 
 
 
