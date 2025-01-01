@@ -1,5 +1,4 @@
 #imports
-import pygame
 import toga
 from toga.style import Pack
 from toga.style.pack import COLUMN, ROW
@@ -116,11 +115,6 @@ class LoRe(toga.App):
             self.MainBox.add(toga.Button("Main menu", on_press=self.MainMenuScreen, style=Pack(color="white",background_color="#050c62")))
         if self.language == "English":
             self.MainBox.add(toga.Button("menu principal", on_press=self.MainMenuScreen, style=Pack(color="white",background_color="#050c62")))
-
-    def PlayMusic(self, widget):
-        pygame.mixer.init()  # Initialise le lecteur audio
-        pygame.mixer.music.load("votre_musique.mp3")  # Charge le fichier audio
-        pygame.mixer.music.play()
 
     def FrenchLanguageSwitcher(self, widget):
         self.language = "French"
